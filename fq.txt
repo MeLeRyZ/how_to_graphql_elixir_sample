@@ -1,0 +1,10 @@
+1. mix phx.gen.context News Link links url:string description:text
+    -> generates some of the database tables and seed data now
+2.  Add lines to `priv/repo/seeds.exs` so that you have some basic seed data
+3. GraphQl Schemas - in _web directory, not like usual DB schemas in main directory
+4. Absinthe Schemas are also type checked at compile time.
+    If you refer to a type that doesn’t exist,
+    Absinthe will catch it for you as soon as possible!
+5. Create `resolvers` dir in `community_web` and write resolvers module
+    refered to schema's func (acutally, autofilled by phx.gen. context)
+6.
